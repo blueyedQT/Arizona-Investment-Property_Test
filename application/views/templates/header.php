@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Northern Arizona Investment Property</title>
+		<title>Northern Arizona Investment Property <?php if(!empty($title)) { echo $title; }; ?></title>
 		<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 	</head>
 	<body>
