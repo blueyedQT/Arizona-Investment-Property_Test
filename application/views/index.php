@@ -1,6 +1,9 @@
-		<div class="content">
-			<h1>Welcome To Arizona Investment Property</h1>
-			<p>Coming Soon!</p>
-		</div>
+			<div class="content">
+				<div class="jumbotron">
+				<p>Welcome To Arizona Investment Property</p>
+			</div>
+				<p>Coming Soon!</p>
+			</div>
+		</div><!-- closing container -->
 	</body>
 </html>

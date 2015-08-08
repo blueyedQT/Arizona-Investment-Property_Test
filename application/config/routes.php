@@ -42,6 +42,7 @@ $route['default_controller'] = "investments/index";
 $route['index'] = "investments/index";
 $route['about'] = "investments/about";
 $route['invest'] = "investments/invest";
+$route['contact'] = "investments/contact";
 $route['404_override'] = '';
 
 
