@@ -43,6 +43,7 @@ $route['index'] = "investments/index";
 $route['about'] = "investments/about";
 $route['invest'] = "investments/invest";
 $route['contact'] = "investments/contact";
+$route['contact_us'] = "investments/contact_us";
 $route['404_override'] = '';
 
 

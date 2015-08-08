@@ -28,4 +28,9 @@ class Investments extends CI_Controller {
 	public function contact() {
 		$this->load->view('contact');
 	}
+
+	public function contact_us() {
+		// Want to have it dsplay a success message on the form page
+		$this->load->view('thank_you');
+	}
 }
