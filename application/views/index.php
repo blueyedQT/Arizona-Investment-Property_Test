@@ -1,5 +1,5 @@
 			<div class="content">
-				<div class="jumbotron">
+				<div class="jumbotron">		
 				<p>Welcome To Arizona Investment Property</p>
 			</div>
 				<p>Coming Soon!</p>

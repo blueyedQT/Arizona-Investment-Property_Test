@@ -19,4 +19,5 @@
 				 --><li class="nav_links"><a href="contact">Contact Us</a></li>
 				</ul>
 			</div>
+			<div id="welcome_image"></div><!-- featured image -->
 			<div class="container"><!-- testing out bootstrap -->

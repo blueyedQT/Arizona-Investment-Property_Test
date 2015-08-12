@@ -65,6 +65,12 @@ a:hover {
 	background-color: gray;
 }
 
+#welcome_image {
+	background: url(/assets/images/grandcanyon.jpg);
+	height: 768px;
+	width: 100%;
+}
+
 .content {
 	display: block;
 	vertical-align: top;
