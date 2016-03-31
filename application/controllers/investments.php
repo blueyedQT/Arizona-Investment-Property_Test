@@ -33,10 +33,16 @@ class Investments extends CI_Controller {
 			}
 			$message = "Success!";
 			$this->session->set_flashdata('message', $message);
-			redirect('');
+			redirect('free_report');
 		}
-		// $post = $this->input->post();
+	}
 
+	public function free_report() {
+		// if($this->session->flashdata('message') == "Success!") {
+			$this->load->view('free_land_scam_report');
+		// } else {
+		// 	redirect('');
+		// }
 	}
 
 	///////// Basic Structure, not yet using :)

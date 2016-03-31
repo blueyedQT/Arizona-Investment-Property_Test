@@ -38,15 +38,29 @@
 |
 */
 
+// $route['default_controller'] = "investments/index";
+// $route['index'] = "investments/index";
+// $route['free_report_signup'] = "investments/free_report_signup";
+// $route['free_report'] ="investments/free_report";
+
+// $route['about'] = "investments/about";
+// $route['invest'] = "investments/invest";
+// $route['featured'] = "investments/featured";
+// $route['contact'] = "investments/contact";
+// $route['contact_us'] = "investments/contact_us";
+// $route['404_override'] = '';
+
 $route['default_controller'] = "investments/index";
 $route['index'] = "investments/index";
 $route['free_report_signup'] = "investments/free_report_signup";
-$route['about'] = "investments/about";
-$route['invest'] = "investments/invest";
-$route['featured'] = "investments/featured";
-$route['contact'] = "investments/contact";
-$route['contact_us'] = "investments/contact_us";
-$route['404_override'] = '';
+$route['free_report'] ="investments/free_report";
+
+// $route['about'] = "/investments/about";
+// $route['invest'] = "/investments/invest";
+// $route['featured'] = "/investments/featured";
+// $route['contact'] = "/investments/contact";
+// $route['contact_us'] = "/investments/contact_us";
+// $route['404_override'] = '';
 
 
 /* End of file routes.php */
