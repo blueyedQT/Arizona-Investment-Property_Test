@@ -12,17 +12,17 @@
 									<span aria-hidden="true">&times;</span>
 									<span class="sr-only">Close</span>
 								</button>
-								<h4 class="modal-title" id="myModalLabel">Free Report!</h4>
+								<h4 class="modal-title" id="myModalLabel"><i>Warning:  Don't get caught buying worthless land from scammers!  Find out how to Avoid Arizona Land Scams!!</i></h4>
 							</div>
 							<!-- Body -->
 							<div class="modal-body">
 		     				<p>
-		     					Sign up to instantly receive your FREE copy of How To Avoid Land Scams in Arizona.  It is full of GREAT information on what you need to know as an investor to avoid falling into the scams that have been plauging pepole for decades.
+		     					Sign up now for our FREE Newsletter and receive our FREE Bonus Arizona Land Scam Report and Arizona Land Buyer's Guide.
 		     				</p>
 		     				<form role="form" action="free_report_signup" method="post">
 		     					<fieldset class="form-group">
-								    <label for="name">Name</label>
-								    <input type="text" class="form-control" id="name" name="name" placeholder="John Doe">
+								    <label for="first_name">First Name</label>
+								    <input type="text" class="form-control" id="name" name="first_name" placeholder="Your Name Here">
 								  </fieldset>
 								  <fieldset class="form-group">	
 								  	<label for="email">Email address</label>							    
@@ -55,7 +55,7 @@
 <?php 		echo $message ?>
 				</div>
 <?php 	} ?>
-	     				<form role="form" action="free_report_signup" method="post">
+<!-- 	     				<form role="form" action="free_report_signup" method="post">
 		<?php 	if(!empty($errors)) { ?>
 							<div class="alert alert-danger" role="alert">
 								<span class="sr-only">Error:</span>
@@ -67,8 +67,7 @@
 								<input class="email form_control" type="text" name="email" placeholder="yourname@yourdomain.com">
 							</div>
 							<button type="submit" class="btn btn-primary">Sign Me Up!</button>
-<!-- 							<input type="submit" value="Sign Me Up!">
- -->						</form>
+					</form> -->
 				</div>
 				<p>Coming Soon!</p>
 			</div>
