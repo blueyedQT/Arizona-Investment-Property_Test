@@ -6,9 +6,11 @@
     #added by Katrina (testing subdomain)
 
     RewriteEngine On
-    RewriteBase /aztest
+    #RewriteBase /aztest
+    RewriteBase /
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteRule ^(.*)$ /aztest/index.php/$1 [L]
     RewriteRule ^(.*)$ /aztest/index.php/$1 [L]
 
     #Removes access to the system folder by users.

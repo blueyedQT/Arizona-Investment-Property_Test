@@ -16,8 +16,8 @@
 | environments.
 |
 */
-// $config['base_url'] = '';
-$config['base_url'] = 'http://kursodevelopment.com/aztest/';
+$config['base_url'] = '';
+// $config['base_url'] = 'http://kursodevelopment.com/aztest/';
 
 /*
 |--------------------------------------------------------------------------
