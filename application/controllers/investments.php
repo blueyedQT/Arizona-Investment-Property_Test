@@ -17,7 +17,8 @@ class Investments extends CI_Controller {
 	}
 
 	public function free_report_signup() {
-		$this->form_validation->set_rules('email', 'Email Address', 'required|valid_email|is_unique[email_addresses.email]');
+		$this->form_validation->set_rules('first_name', 'Name', 'trim|min_length[2]|max+length[15]|xss_clean');
+		$this->form_validation->set_rules('email', 'Email Address', 'trim|required|valid_email|is_unique[users.email]');
 		if($this->form_validation->run() == FALSE) {
 			$this->view_data['errors'] = validation_errors();
 			$this->session->set_flashdata('errors', $this->view_data['errors']);
@@ -25,8 +26,8 @@ class Investments extends CI_Controller {
 		} else {
 			$this->load->model('InvestmentModel');
 			$post = $this->input->post();
-			$model = $post['email'];
-			$add_email = $this->InvestmentModel->add_email($model);
+			$model = $post;
+			$add_email = $this->InvestmentModel->add_user($model);
 			if($add_email == FALSE) {
 				$this->session->set_flashdata['errors'] = 'There was a system error, please try again.';
 				redirect('');
@@ -39,7 +40,7 @@ class Investments extends CI_Controller {
 			// Optional message
 			$message = "Success!";
 			$this->session->set_flashdata('message', $message);
-			
+
 			redirect('free_report');
 		}
 	}
