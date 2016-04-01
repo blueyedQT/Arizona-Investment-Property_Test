@@ -31,35 +31,25 @@ class Investments extends CI_Controller {
 				$this->session->set_flashdata['errors'] = 'There was a system error, please try again.';
 				redirect('');
 			}
-
-			// TESTING
+			// If successful send new customer to GetResponse API
 			$this->load->library('GetResponse');
 			$api = new GetResponse('929e79b37d3acd438f49957aab51521b'); // Testing Account
-			// Contacts
-			// $contacts 	= (array)$api->getContacts(null);
-			// var_dump($contacts);
-			// die('After Contacts');
-			// $contactIDs	= array_keys($contacts);
-			// $setName 	= $api->setContactName($contactIDs[0], 'Jimmy');
-			// $setCustoms	= $api->setContactCustoms($contactIDs[0], array('title' => 'Mr', 'middle_name' => 'Fred'));
-			// $customs 	= $api->getContactCustoms($contactIDs[0]);
-			// $contact 	= $api->getContactByID($contactIDs[0]);
-			// $geoIP 		= $api->getContactGeoIP($contactIDs[0]);
-			// $opens 		= $api->getContactOpens($contactIDs[0]);
-			// $clicks 	= $api->getContactClicks($contactIDs[0]);
 			$addContact = $api->addContact('pDm5M', $post['first_name'], $post['email']);
+
+			// Optional message
 			$message = "Success!";
 			$this->session->set_flashdata('message', $message);
+			
 			redirect('free_report');
 		}
 	}
 
 	public function free_report() {
-		// if($this->session->flashdata('message') == "Success!") {
+		if($this->session->flashdata('message') == "Success!") {
 			$this->load->view('free_land_scam_report');
-		// } else {
-		// 	redirect('');
-		// }
+		} else {
+			redirect('');
+		}
 	}
 
 	///////// Basic Structure, not yet using :)
