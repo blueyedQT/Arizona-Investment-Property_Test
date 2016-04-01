@@ -35,22 +35,6 @@ class Investments extends CI_Controller {
 			// TESTING
 			$this->load->library('GetResponse');
 			$api = new GetResponse('929e79b37d3acd438f49957aab51521b'); // Testing Account
-
-			$contact = $this->input->post();
-
-			// // Test to make sure connection is working
-			// echo $api->ping(); // Output: "pong"
-
-			// Display account information
-			// $account = $api->getAccountInfo();
-			// var_dump($account);
-
-			// Campaigns
-			// $campaigns 	 = (array)$api->getCampaigns();
-			// $campaignIDs = array_keys($campaigns);
-			// $campaign 	 = $api->getCampaignByID($campaignIDs[0]);
-			// var_dump($campaigns, $campaign);
-
 			// Contacts
 			// $contacts 	= (array)$api->getContacts(null);
 			// var_dump($contacts);
@@ -63,11 +47,7 @@ class Investments extends CI_Controller {
 			// $geoIP 		= $api->getContactGeoIP($contactIDs[0]);
 			// $opens 		= $api->getContactOpens($contactIDs[0]);
 			// $clicks 	= $api->getContactClicks($contactIDs[0]);
-			$addContact = $api->addContact('pDm5M', $cotact['name'], $contact['email']);
-
-			var_dump($addContact);
-			// End Testing
-
+			$addContact = $api->addContact('pDm5M', $post['first_name'], $post['email']);
 			$message = "Success!";
 			$this->session->set_flashdata('message', $message);
 			redirect('free_report');

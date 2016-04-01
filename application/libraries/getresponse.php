@@ -40,7 +40,7 @@ class GetResponse
     * @var boolean
     * @access private
     */
-    private $errorsOn = true;
+    private $errorsOn = false;
     /**
      * Check cURL extension is loaded and that an API key has been passed, also enables or disables error printing
      * @param string $apiKey GetResponse API key
@@ -602,4 +602,3 @@ class GetResponse
         }
     }
 }
-?>
